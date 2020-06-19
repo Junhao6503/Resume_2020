@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  (Master student in Computer Science, actively looking for a full-time software engineer position)
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}rr}
+%   \textbf{{\LARGE Jun Hao}} & \small Email : \href{mailto:jun.hao@wsu.edu}{\small jun.hao@wsu.edu} & \small Mobile:
+%   (206)-643-7281
+% \end{tabular*} 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Jun Hao}} & \footnotesize Email : \href{mailto:jun.hao@wsu.edu}{jun.hao@wsu.edu}\\
+ \small Master student in Computer Science, actively looking for a full-time software engineer position& \footnotesize Mobile : 206-643-7281 \\
+\end{tabular*}
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Washington State University}{Vancouver, WA}
+      {Master of Science in Computer Science}{Expected July 2020}
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Bachelor of Science in Electrical Engineering}{Sep 2012 - Dec 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Washington State University}{Vancouver, WA}
+      {Research Assistant/Teaching Assistant}{Aug 2017 - May 2019}
+      \resumeItemListStart
+        \resumeItem{Network Visualization: }
+          {Designed a network visualization algorithm based on Force-Directed Graph Layout by adding auxiliary community information as force weights in \textit{matplotlib} and \textit{D3.js.}}
+          \resumeItem{}{Improved edge crossing and node distribution with simulated annealing for better interpretability of layout.}
+          \resumeItem{Diffusion Analysis and Visualization: }
+          {Developed a Twitter network analysis web app with network-based diffusion analysis with \textit{React}, \textit{Neo4j}, and \textit{Node.js}, which is capable of visualizing sentiment and topic contagion in static or evolving networks. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {El Cielo Technology}{Beijing, China}
+      {Embedded Software Engineer Intern} {Apr 2017 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Embedded Systems on STM32: }
+          {Designed the printed circuit boards with \textit{STM32} F2 and F4 chips and implemented embedded systems for controlling movement of antenna array, pre-processing and storing high-frequency incoming signals from antenna.}
+          \resumeItem{}{Implemented APIs for upper level applications to access data in batches with Fourier transformation.}
+        \resumeItem{}
+          {Developed a web app as an internal supply chain data query platform in \textit{PHP and CSS} with \textit{Bootstrap.}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DJI Technology Inc.}{Shenzhen, China}
+      {Embedded Software Engineer Intern}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{Computer Vision: }
+          {Implemented a computer vision algorithm with ORB feature matching and mean shift tracking for object classification and viewpoint estimation in \textit{OpenCV-Python}.}
+            \resumeItem{Flight Control for Drone Delivery: }
+          {Designed and implemented an autonomous flight control system based on real-time feedback of a visual odometry and distance calibration with computer vision algorithm in \textit{C++} and \textit{Robot Operating System (ROS).}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+   \resumeProheading{Multi-players Computer Game}{Vancouver, WA}
+   \resumeItemListStart
+    \resumeItem{Hollywood Hacker Game: }
+      {Participated in the full Agile software development cycle of a real-time computer game for users to play mini-games in multiple threads from either hacker or security side.}
+      \resumeItem{ }{Designed the multi-player game in an object-oriented application framework using \textit{Java} Slick2D.}
+      \resumeItem{ }{Architectured the communication protocol based on TCP connection between multiple computers on LAN.}
+    \resumeItemListEnd
+    \resumeProheading{Minimum Distance Rumor Source Detection}{Vancouver, WA}
+   \resumeItemListStart
+    \resumeItem{Social Network Analysis: }
+          {Simulated rumor backward propagation in a social network with SNAP library; implemented an algorithm based on maximum likelihood estimation and greedy search to select K candidates as rumor sources with the minimum total distance error in \textit{C++}}
+          \resumeItem{}{\href{https://ieeexplore.ieee.org/document/8487400}{Published on the 27th International Conference on Computer Communications and Networks (ICCCN’18).}}
+    \resumeItem{Spark: }{Designed and built data storage and processing with \textit{Scala} for high performance and scalability.}
+    \resumeItemListEnd
+    
+    \resumeProheading{Parking Monitoring System for Capitol Hill Community}{Seattle, WA}
+   \resumeItemListStart
+    \resumeItem{Monitor Available Parking Space: }
+          {Designed and developed a Python program to calculate the parking space in a garage; achieved 2\% error by monitoring cars in and out signals with data interrogating from RFID tags.}
+          \resumeItem{}{Implemented a decision tree classifier to estimate occupation of individual parking spots with pictures from a low-resolution camera.}
+          \resumeItem{}{Published data pipeline for API and visualization; deployed a web app with GoogleMaps iFrame on \textit{AWS}.}
+    \resumeItemListEnd
+    
+%     \resumeProheading{Robomasters Robotics Competition}{Seattle, WA}
+%   \resumeItemListStart
+%     \resumeItem{Computer Vision and Control System}
+%           {Programed a control system for a robot vehicle by C and applied YOLO on a real-time object detection program}
+%     \resumeItemListEnd
+    
+    \resumeProheading{Network-based Interactive Game}{Seattle, WA}
+  \resumeItemListStart
+    \resumeItem{}
+          {Built an asynchronous serial network system between two \textit{FPGA} boards by \textit{Verilog}; designed and implemented a 2-player Pokemon game in C under RS232 protocol on Nios II Microprocessor.}
+    \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, C, Python, C++, JavaScript, PHP, CSS, Scala, Shell}
+    %  \hfill
+   }
+   \vspace{-8 pt}
+   \item{
+   \textbf{Tools}{: Linux, OpenCV, Node.js, React.js, Tensorflow, scikit-learn, ROS, AWS, MySQL, Neo4j, Spark, Hadoop}
+   }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
